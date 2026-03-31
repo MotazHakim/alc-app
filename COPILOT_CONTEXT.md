@@ -1,4 +1,4 @@
-# Database Schema & System Requirements Blueprint: Arab Labor Organization (ALO) Conference Management System !!!
+# Database Schema & System Requirements Blueprint: Arab Labor Organization (ALO) Conference Management System 
 
 ## 1. Project Context & Architecture Constraints
 *   **Backend & Database:** The system will be powered by **PocketBase** (which uses an SQLite database under the hood). PocketBase will act as the unified backend handling the database operations, user authentication, role-based access, automated emails, and file storage. 
