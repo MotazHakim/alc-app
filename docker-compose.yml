@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  alc-app:
+    image: node:20-alpine
+    container_name: alc-app
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: sh -c "npm install -g pnpm && pnpm install && pnpm run dev"
+    ports:
+      - "127.0.0.1:5173:5173"
+    networks:
+      - scoobydoo
+
+networks:
+  scoobydoo:
+    external: true
